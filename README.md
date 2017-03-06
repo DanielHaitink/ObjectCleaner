@@ -1,2 +1,2 @@
 # ObjectCleaner
-Cleanes every you throw at it
+Cleans materials from .obj files
