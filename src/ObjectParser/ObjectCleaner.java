@@ -14,10 +14,15 @@ public class ObjectCleaner {
 
     public ObjectCleaner(File file) {
         this.file = file;
-        clean();
     }
 
-    public void clean() {
+    private boolean isFileObj() {
+        return file.toString().endsWith(".obj");
+    }
+
+    public int clean() {
+        if (!isFileObj())
+            return 0;
         try{
             FileReader fileReader = new FileReader(file);
             BufferedReader reader = new BufferedReader(fileReader);
@@ -43,7 +48,10 @@ public class ObjectCleaner {
             writer.close();
             fileWriter.close();
         } catch (IOException e) {
-
+            e.printStackTrace();
+            return 0;
         }
+
+        return 1;
     }
 }

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ObjectParser.iml" filepath="$PROJECT_DIR$/ObjectParser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ObjectCleaner.iml" filepath="$PROJECT_DIR$/ObjectCleaner.iml" />
     </modules>
   </component>
 </project>
